@@ -1,4 +1,4 @@
-#SQLi-sqlmap-challenge\n
+## SQLi-sqlmap-challenge
 Author: Kitsios Marios
 Date: 29/11/2021
 Topic: SQLi tool: sqlmap
