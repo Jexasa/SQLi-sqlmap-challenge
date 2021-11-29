@@ -6,9 +6,12 @@
 
 
 ## Install sqlmap
-Instructions for installation of sqlmap here: https://github.com/sqlmapproject/sqlmap
+* Instructions for installation of sqlmap here: https://github.com/sqlmapproject/sqlmap
+* Install with git
+
 ```
-$ git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
+$ sudo git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev       
+$ python sqlmap.py                                                                       
 ```
 
 ## Connect 
