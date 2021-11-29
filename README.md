@@ -28,7 +28,7 @@ $ git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
              -u Target URL (e.g. "http://www.site.com/vuln.php?id=1")
              --dbs Enumerate the databases
    ```
-   # Or you can:
+   Or you can:
    * Intercept the request with BurpSuite (or whatever you prefer)
    * Save the request in a .txt file (because sqlmap works best with a .txt file)
    ```
