@@ -22,15 +22,15 @@ $ git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
    ```
    
 ## Use sqlmap to enumerate the databases and to check if the GET parameter that is being passed is vulnerable to SQLi
-   There are two ways to do that:
+   You can either use the url directly to begin the attack:
    ```
       sqlmap -u <url> --dbs
              -u Target URL (e.g. "http://www.site.com/vuln.php?id=1")
              --dbs Enumerate the databases
    ```
-   * OR
-   #Intercept the request with BurpSuite (or whatever you prefer)
-   #Save the request in a .txt file (because sqlmap works best with a .txt file)
+   # Or you can:
+   * Intercept the request with BurpSuite (or whatever you prefer)
+   * Save the request in a .txt file (because sqlmap works best with a .txt file)
    ```
       sqlmap -u <url> -r <file_path.txt> --dbs
                       -r Specifies a file to read the get request instead of the url
