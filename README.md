@@ -66,7 +66,7 @@ Consider the following php code segment. https://stackoverflow.com/
         $stmt = db->prepare("Select name from users where id = :id");
         $stmt->execute(array(':id', $data));
 ```
-*In this code, the user input is not combined with the prepared statement. They are compiled separately. So even if malicious code is entered as user input, the program will simply treat the malicious part of the code as a string and not a command. 
+In this code, the user input is not combined with the prepared statement. They are compiled separately. So even if malicious code is entered as user input, the program will simply treat the malicious part of the code as a string and not a command. 
 
 ## Questions to be answered:
   * 1.Which DBMS is being used and what version is it?
