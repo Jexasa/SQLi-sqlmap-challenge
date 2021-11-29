@@ -69,8 +69,8 @@ Consider the following php code segment. https://stackoverflow.com/
 *In this code, the user input is not combined with the prepared statement. They are compiled separately. So even if malicious code is entered as user input, the program will simply treat the malicious part of the code as a string and not a command. 
 
 ## Questions to be answered:
-  *1.Which DBMS is being used and what version is it*
-  *2.What are the names of the two databases*
+  * 1.Which DBMS is being used and what version is it*
+  * 2.What are the names of the two databases*
   *3.How many tables are there in the database acuart*
   *4.What kind of data type is being stored in the “adsec” column of the table “artists”*
   #5.What is the 1st value of “aname” column of the table “artists” and the database “acuart”
