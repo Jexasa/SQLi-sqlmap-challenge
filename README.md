@@ -5,9 +5,11 @@ Topic: SQLi tool: sqlmap
 Challenge created specifically for the Cyber Security Club of University of Macedonia
 
 
-1. Install sqlmap
+## Install sqlmap
 Instructions for installation of sqlmap here: https://github.com/sqlmapproject/sqlmap
-Linux: '''git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev'''
+'''
+$ git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
+'''
 
 2. Connect to http://testphp.vulnweb.com/
 
