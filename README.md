@@ -1,8 +1,8 @@
 ## SQLi-sqlmap-challenge
-*[Author: Kitsios Marios]
-*[Date: 29/11/2021
-*Topic: SQLi tool: sqlmap
-*Challenge created specifically for the Cyber Security Club of University of Macedonia]
+* Author: Kitsios Marios
+* Date: 29/11/2021
+* Topic: SQLi tool: sqlmap
+* Challenge created specifically for the Cyber Security Club of University of Macedonia
 
 
 ## Install sqlmap
@@ -11,7 +11,8 @@ Instructions for installation of sqlmap here: https://github.com/sqlmapproject/s
 $ git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
 ```
 
-2. Connect to http://testphp.vulnweb.com/
+## Connect 
+* Connect to http://testphp.vulnweb.com/
 
 3. Find a possible vulnerable location in the website
    example: http://testphp.vulnweb.com/something.php?something=something
