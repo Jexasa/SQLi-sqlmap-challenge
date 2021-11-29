@@ -1,7 +1,7 @@
 ## SQLi-sqlmap-challenge
 * Author: Kitsios Marios
 * Date: 29/11/2021
-* Topic: SQLi tool: sqlmap
+* Topic: SQLi tool sqlmap
 * Challenge created specifically for the Cyber Security Club of University of Macedonia
 
 
@@ -23,15 +23,14 @@ $ git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
    
 ## Use sqlmap to enumerate the databases and to check if the GET parameter that is being passed is vulnerable to SQLi
    There are two ways to do that:
-   * First way:
    ```
       sqlmap -u <url> --dbs
              -u Target URL (e.g. "http://www.site.com/vuln.php?id=1")
              --dbs Enumerate the databases
    ```
-   * Second way:
-   Intercept the request with BurpSuite (or whatever you prefer)
-   Save the request in a .txt file (because sqlmap works best with a .txt file)
+   * OR
+   #Intercept the request with BurpSuite (or whatever you prefer)
+   #Save the request in a .txt file (because sqlmap works best with a .txt file)
    ```
       sqlmap -u <url> -r <file_path.txt> --dbs
                       -r Specifies a file to read the get request instead of the url
@@ -59,16 +58,15 @@ $ git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
 ```
 
 ## Prevent SQL Injection
-
-  SQL injection can be generally prevented by using Prepared Statements . When we use a prepared statement, we are basically using a template for the code and analyzing the code and user input separately. It does not mix the user entered query and the code. A code vulnerability often exists, when the **input entered by the user is directly inserted into the code and they are compiled together, and hence we are able to execute malicious code.** For prepared statements, we basically send the sql query with a placeholder for the user input and then send the actual user input as a separate command. 
+  *SQL injection can be generally prevented by using Prepared Statements . When we use a prepared statement, we are basically using a template for the code and analyzing the code and user input separately. It does not mix the user entered query and the code. A code vulnerability often exists, when the **input entered by the user is directly inserted into the code and they are compiled together, and hence we are able to execute malicious code.** For prepared statements, we basically send the sql query with a placeholder for the user input and then send the actual user input as a separate command. 
   
-Consider the following php code segment. https://stackoverflow.com/
+*Consider the following php code segment. https://stackoverflow.com/
 ```
         $db = new PDO('connection details');
         $stmt = db->prepare("Select name from users where id = :id");
         $stmt->execute(array(':id', $data));
 ```
-In this code, the user input is not combined with the prepared statement. They are compiled separately. So even if malicious code is entered as user input, the program will simply treat the malicious part of the code as a string and not a command. 
+*In this code, the user input is not combined with the prepared statement. They are compiled separately. So even if malicious code is entered as user input, the program will simply treat the malicious part of the code as a string and not a command. 
 
 ## Questions to be answered:
   1.Which DBMS is being used and what version is it
