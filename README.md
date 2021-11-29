@@ -1,8 +1,8 @@
 ## SQLi-sqlmap-challenge
 *Author: Kitsios Marios
-Date: 29/11/2021
-Topic: SQLi tool: sqlmap
-Challenge created specifically for the Cyber Security Club of University of Macedonia
+*Date: 29/11/2021
+*Topic: SQLi tool: sqlmap
+*Challenge created specifically for the Cyber Security Club of University of Macedonia
 
 
 ## Install sqlmap
