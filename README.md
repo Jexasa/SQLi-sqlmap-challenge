@@ -17,8 +17,8 @@ $ git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
 ## Find a possible vulnerable location in the website
    * example: http://testphp.vulnweb.com/something.php?something=something
    ```HTML
-<h3>If you cant find a potentially vulnerable location in the website</h3>
-	<h4>base64 decode this to get a hint on where it is: aHR0cDovL3Rlc3RwaHAudnVsbndlYi5jb20vbGlzdHByb2R1Y3RzLnBocD9jYXQ9MQ== </h4>
+   If you cant find a potentially vulnerable location in the website
+   base64 decode this to get a hint on where it is: aHR0cDovL3Rlc3RwaHAudnVsbndlYi5jb20vbGlzdHByb2R1Y3RzLnBocD9jYXQ9MQ== 
    ```
    
 4. Use sqlmap to enumerate the databases and to check if the GET parameter that is being passed is vulnerable to SQLi
