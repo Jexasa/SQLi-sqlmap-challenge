@@ -58,9 +58,9 @@ $ git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
 ```
 
 ## Prevent SQL Injection
-  *SQL injection can be generally prevented by using Prepared Statements . When we use a prepared statement, we are basically using a template for the code and analyzing the code and user input separately. It does not mix the user entered query and the code. A code vulnerability often exists, when the **input entered by the user is directly inserted into the code and they are compiled together, and hence we are able to execute malicious code.** For prepared statements, we basically send the sql query with a placeholder for the user input and then send the actual user input as a separate command. 
+  SQL injection can be generally prevented by using Prepared Statements . When we use a prepared statement, we are basically using a template for the code and analyzing the code and user input separately. It does not mix the user entered query and the code. A code vulnerability often exists, when the **input entered by the user is directly inserted into the code and they are compiled together, and hence we are able to execute malicious code.** For prepared statements, we basically send the sql query with a placeholder for the user input and then send the actual user input as a separate command. 
   
-*Consider the following php code segment. https://stackoverflow.com/
+Consider the following php code segment. https://stackoverflow.com/
 ```
         $db = new PDO('connection details');
         $stmt = db->prepare("Select name from users where id = :id");
