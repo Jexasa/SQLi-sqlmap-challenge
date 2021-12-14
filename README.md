@@ -35,8 +35,8 @@ $ python sqlmap.py
    * Intercept the request with BurpSuite (or whatever you prefer)
    * Save the request in a .txt file (because sqlmap works best with a .txt file)
    ```
-      sqlmap -u <url> -r <file_path.txt> --dbs
-                      -r Specifies a file to read the get request instead of the url
+      sqlmap -r <file_path.txt> --dbs
+             -r Specifies a file to read the get request instead of the url
    ```
    
 ## List all the tables of a database 
